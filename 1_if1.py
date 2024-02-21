@@ -20,20 +20,17 @@ school = 18
 uni = 23
 
 def main(age):
-    """
-    Эта функция вызывается автоматически при запуске скрипта в консоли
-    В ней надо заменить pass на ваш код
-    """
-    if int(age) <= int(kindergarden):
-        return (f"Ваш возраст " + age + " Вы должны учиться в детском саду")
-    elif int(age) <= int(school):
-        return (f"Ваш возраст " + age + " Вы должны учиться в школе")
-    elif int(age) <= int(uni):
-        return (f"Ваш возраст " + age + " Вы должны учиться в университете")
+    age = int(age)
+
+    if age <= kindergarden:
+        return (f"Ваш возраст {age}. Вы должны учиться в детском саду")
+    elif age <= school:
+        return (f"Ваш возраст {age}. Вы должны учиться в школе")
+    elif age <= uni:
+        return (f"Ваш возраст {age}. Вы должны учиться в университете")
     else:
-        return (f"Ваш возраст " + age + " Вы должны работать")
+        return (f"Ваш возраст {age}. Вы должны работать")
 
 if __name__ == "__main__":
   answer = main(user_age)
-
-print(answer)
+  print(answer)
