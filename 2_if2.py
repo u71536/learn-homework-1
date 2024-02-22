@@ -17,7 +17,6 @@
 
 def main(str1, str2):
 
-
     if isinstance(str1, str) == True and isinstance(str2, str) == True:
         if str1 == str2:
             return 1

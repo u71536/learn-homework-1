@@ -11,7 +11,7 @@
 """
 
 def hello_user():
-    user_input = input("Как дела? ").lower()
+    user_input = input("Как дела?").lower()
 
     while user_input != "хорошо":
         try:

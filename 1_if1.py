@@ -33,5 +33,4 @@ def main(age):
         return (f"Ваш возраст {age}. Вы должны работать!")
 
 if __name__ == "__main__":
-  answer = main(user_age)
-  print(answer)
+  print(main(user_age))

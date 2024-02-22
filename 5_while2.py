@@ -21,14 +21,11 @@ def ask_user(answers_dict):
     user_question = input()
 
     while True:
-      if user_question in q_a
-      :
-          print(f"{user_question}: {q_a
-          [user_question]}")
+      if user_question in q_a:
+          print(f"{q_a[user_question]}")
           break
       break
 
     
 if __name__ == "__main__":
-    ask_user(q_a
-    )
+    ask_user(q_a)
