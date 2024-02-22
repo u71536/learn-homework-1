@@ -14,6 +14,7 @@
 
 """
 
+
 user_age = input()
 kindergarden = 5
 school = 18
@@ -23,13 +24,13 @@ def main(age):
     age = int(age)
 
     if age <= kindergarden:
-        return (f"Ваш возраст {age}. Вы должны учиться в детском саду")
+        return (f"Ваш возраст {age}. Вы должны учиться в детском саду!")
     elif age <= school:
-        return (f"Ваш возраст {age}. Вы должны учиться в школе")
+        return (f"Ваш возраст {age}. Вы должны учиться в школе!")
     elif age <= uni:
-        return (f"Ваш возраст {age}. Вы должны учиться в университете")
+        return (f"Ваш возраст {age}. Вы должны учиться в университете!")
     else:
-        return (f"Ваш возраст {age}. Вы должны работать")
+        return (f"Ваш возраст {age}. Вы должны работать!")
 
 if __name__ == "__main__":
   answer = main(user_age)

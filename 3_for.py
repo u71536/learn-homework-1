@@ -37,7 +37,7 @@ for item in phones:
     sales_sum = main(item['items_sold'])
     sales_avg = sales_sum / len(item['items_sold'])
     print(f"Сумма покупок {item['product']}: {round(sales_sum, 2)}")
-    print(f"Среднее количество покупок {item['product']}: {round(sales_avg, 2)}")
+    print(f"Среднее кол-во покупок {item['product']}: {round(sales_avg, 2)}")
     all_phones_sales_sum += sales_sum
     all_phones_sales_avg += len(item['items_sold'])
 

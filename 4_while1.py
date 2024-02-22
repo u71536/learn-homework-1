@@ -13,7 +13,7 @@ def hello_user():
     user_input = input("Как дела?").lower()
 
     while user_input != "хорошо":
-       user_input = input("Давайте еще раз. Как дела?")
+       user_input = input("Давайте еще раз. Как у вас дела?")
 
     
 if __name__ == "__main__":

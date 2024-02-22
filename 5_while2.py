@@ -15,17 +15,20 @@
     
 """
 
-questions_and_answers = {"Как дела": "Хорошо!", "Что делаешь?": "Программирую", "Какой сегодня день?": "Прекрасный"}
+q_a = {"Как дела": "Хорошо!", "Что делаешь?": "Программирую", "Какой сегодня день?": "Прекрасный"}
 
 def ask_user(answers_dict):
     user_question = input()
 
     while True:
-      if user_question in questions_and_answers:
-          print(f"{user_question}: {questions_and_answers[user_question]}")
+      if user_question in q_a
+      :
+          print(f"{user_question}: {q_a
+          [user_question]}")
           break
       break
 
     
 if __name__ == "__main__":
-    ask_user(questions_and_answers)
+    ask_user(q_a
+    )

@@ -10,33 +10,16 @@
     
 """
 
- def hello_user():
-    user_input = input("Как дела?").lower()
+def hello_user():
+    user_input = input("Как дела? ").lower()
 
     while user_input != "хорошо":
-       user_input = input("Давайте еще раз. Как дела?")
-
-    """
-    Замените pass на ваш код
-    """
-    pass
-
-    
-if __name__ == "__main__":
-    hello_user()
-
-
-def hello_user():
-       try:
-            x = y / 0
-       except KeyboardInterrupt:
-            print("Пока!")
+        try:
+            user_input = input("Давайте еще раз. Как дела? ").lower()
+        except:
+            print("\nПока!")
             break
-    """
-    Замените pass на ваш код
-    """
-    pass
 
-    
+
 if __name__ == "__main__":
     hello_user()

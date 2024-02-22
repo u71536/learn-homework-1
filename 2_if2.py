@@ -15,18 +15,23 @@
 
 """
 
-def main():
-    str1 = "Some text"
-    str2 = "Some text2"
+def main(str1, str2):
 
 
-    if isinstance(str1, str) == True and isinstance(str2, str):
-        return 0
-    elif str1 == str2:
-        return 1
+    if isinstance(str1, str) == True and isinstance(str2, str) == True:
+        if str1 == str2:
+            return 1
+        elif str1 != str2 and str2 == "learn":
+            return 3
+        elif str1 != str2 and len(str1) > len(str2):
+            return 2
     else:
-        pass
+        return 0
 
     
 if __name__ == "__main__":
-    main()
+    print(main("Some text", "Some text"))
+    print(main("Some more text", "Some text"))
+    print(main("Some text", "learn"))
+    print(main(4, "Some text"))
+    print(main(4, 5.0))
